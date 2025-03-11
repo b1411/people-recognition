@@ -14,7 +14,7 @@ model.classes = [0]  # Отслеживаем только людей
 tracker = Sort()
 
 # Захват кадра для выбора 4 точек (углов двери)
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture("rtsp://192.168.0.51")
 ret, frame = cap.read()
 if not ret:
     print("Ошибка при захвате кадра!")
